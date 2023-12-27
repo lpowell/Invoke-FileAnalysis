@@ -5,9 +5,11 @@ Description:
 This module contains various tools for file analysis. It will be updated per my own needs and recommendations/fixes. The goal is to provide similar functionality to other toolsets but built entirely in PowerShell for ease of use. It is not designed to replace traditional toolsets, only to provide alternative native PowerShell versions. 
 
 Each module can accept values from piped commands 
-   Get-ChildItem | %{Get-FileType $_} 
+
+    Get-ChildItem | %{Get-FileType $_} "
 Modules also accept multiple files 
-   Get-Strings "file1","file2","file3"
+
+    Get-Strings "file1","file2","file3"
 
 
 
