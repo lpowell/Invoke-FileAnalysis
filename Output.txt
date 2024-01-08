@@ -1,6 +1,6 @@
 File Type Analysis
 
-FileName    : C:\Users\Liam Powell\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
+FileName    : C:\Users\****\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
 FileHash    : E95A532E3601C471EA65B26E39136AF7E00626D1EFD9C087C978E769B8A4F020
 Signature   : 4D 5A 90 00 03 00 00 00 04 00
 Extensions  : EXE,DLL,MUI,SYS,SCR,CPL,OCX,AX,IEC,IME,RS,TSP,FON,EFI
@@ -8,7 +8,7 @@ Description : DOS MZ executable and its descendants (including NE and PE)
 
 PE File Analysis
 
-FileName         : C:\Users\Liam Powell\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
+FileName         : C:\Users\****\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
 Type             : 32-Bit PE32
 TimeStamp        : 2023-09-07T11:35:26
 Checksum         : 00 00 00 00
@@ -30,10 +30,10 @@ AssemblyRef      : {mscorlib, System, System.Windows.Forms, System.Security…}
 
 VirusTotal Analysis 
 
-File          : C:\Users\Liam Powell\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
+File          : C:\Users\****\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
 Determination : Malicious
 Malicious     : 51
 Suspicious    : 0
 Harmless      : 0
-Link          : https://www.virustotal.com/api/v3/files/e95a532e3601c471ea65b26e39136af7e00626d1efd9c087c978e769b8a4f020
+Link          : https://www.virustotal.com/gui/file/e95a532e3601c471ea65b26e39136af7e00626d1efd9c087c978e769b8a4f020
 
