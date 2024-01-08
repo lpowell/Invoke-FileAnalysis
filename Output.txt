@@ -1,0 +1,39 @@
+File Type Analysis
+
+FileName    : C:\Users\Liam Powell\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
+FileHash    : E95A532E3601C471EA65B26E39136AF7E00626D1EFD9C087C978E769B8A4F020
+Signature   : 4D 5A 90 00 03 00 00 00 04 00
+Extensions  : EXE,DLL,MUI,SYS,SCR,CPL,OCX,AX,IEC,IME,RS,TSP,FON,EFI
+Description : DOS MZ executable and its descendants (including NE and PE)
+
+PE File Analysis
+
+FileName         : C:\Users\Liam Powell\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
+Type             : 32-Bit PE32
+TimeStamp        : 2023-09-07T11:35:26
+Checksum         : 00 00 00 00
+SectionNames     : {.text   , .rsrc   , .reloc  }
+SectionOffsets   : {00 00 20 00, 00 03 E0 00, 00 04 00 00}
+MetadataOffset   : 00 02 CF 78
+Streams          : {#~, #Strings, #GUID, ##Blob}
+StreamsOffset    : {00 00 00 60, 00 00 6D 50, B8 0C 00 00, 00 B8 1C 00}
+ImportTable      : _CorExeMain mscoree.dll
+TypeRefNames     : {Object, RemoteCertificateValidationCall, X509Certificate, X509Chain…}
+TypeRefNamespace : {System, System.Net.Security, System.Security.Cryptography.X5, System.Security.Cryptography.X5…}
+Methods          : {hp3Cz6iY, .ctor, kA4r, 0nMJdMO6YL…}
+Params           : {TPxP, LJUb7ooeO, YGjXWFGA, dTAwTevrcHp…}
+MemberRef        : {.ctor, .ctor, .ctor, .ctor…}
+Events           : {KeyDown, KeyUp, Changed}
+ModuleRef        : {user32.dll, psapi.dll, user32, kernel32…}
+Imports          : {GetForegroundWindow, GetWindowText, GetWindowTextLength, GetKeyboardState…}
+AssemblyRef      : {mscorlib, System, System.Windows.Forms, System.Security…}
+
+VirusTotal Analysis 
+
+File          : C:\Users\Liam Powell\OneDrive\Documents\Malware\WARNING-MALWARE-AHEAD\f1fcd\Artifacts\FireBaseExAgentTesla
+Determination : Malicious
+Malicious     : 51
+Suspicious    : 0
+Harmless      : 0
+Link          : https://www.virustotal.com/api/v3/files/e95a532e3601c471ea65b26e39136af7e00626d1efd9c087c978e769b8a4f020
+
