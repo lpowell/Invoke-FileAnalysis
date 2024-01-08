@@ -407,7 +407,7 @@ function Get-VirusTotalAnalysis([Parameter(Mandatory=$true,ValueFromPipeline=$tr
                     Malicious = $Content.data.attributes.last_analysis_stats.malicious
                     Suspicious = $Content.data.attributes.last_analysis_stats.suspicious
                     Harmless = $Content.data.attributes.last_analysis_stats.harmless
-                    Link = $Content.data.links.self
+                    Link = ($Content.data.links.self).replace("/api/v3/files/", "/gui/file/")
                 }
                 $Results
             }
@@ -1332,7 +1332,7 @@ AssemblyRef
 
 }
 
-function Invoke-FileAnalysis([Parameter(Mandatory=$true,ValueFromPipeline=$True,HelpMessage="Enter one or more file paths separated by commas")] [string]$File, [parameter(Mandatory=$false,HelpMessage="Display strings?")] [Switch]$Strings , [Parameter(Mandatory=$false,ValueFromPipeline=$false,HelpMessage="VirusTotal API Key")] [string] $APIKey){
+function Invoke-FileAnalysis([Parameter(Mandatory=$true,ValueFromPipeline=$True,HelpMessage="Enter one or more file paths separated by commas")] [string]$File, [parameter(Mandatory=$false,HelpMessage="Display strings?")] [Switch]$Strings , [Parameter(Mandatory=$false,ValueFromPipeline=$false,HelpMessage="VirusTotal API Key")] [string] $APIKey,[Parameter(Mandatory=$false,ValueFromPipeline=$false,HelpMessage="Print all imports")] [switch]$PrintAll ){
 <#
     .SYNOPSIS
         Invoke-FileAnalysis returns Get-FileType, Get-VirusTotalAnalysis, and optionally Get-Strings for any given file or list of files.
@@ -1354,7 +1354,12 @@ function Invoke-FileAnalysis([Parameter(Mandatory=$true,ValueFromPipeline=$True,
             # Send to PE Analysis if it's a PE file
             if($filetype.Signature -match "4D 5A 90 00"){
                 Write-Output "PE File Analysis`n"
-                Invoke-PEAnalysis $x
+                if($PrintAll){
+                    Invoke-PEAnalysis $x -PrintAll
+                }else{
+                    Invoke-PEAnalysis $x
+                }
+
             }
             # Send to VirusTotal
             if($APIKey){
