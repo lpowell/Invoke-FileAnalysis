@@ -1,3 +1,6 @@
+NOTE: Invoke-PEAnalysis has been updated and should be used in place of Invoke-FileAnalysis. I haven't gotten around to cleaning up the repo after the re-write yet. 
+
+
 # Invoke-FileAnalysis
 PowerShell module for various file analysis tools.
 
